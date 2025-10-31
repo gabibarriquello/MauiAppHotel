@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.Views.Sobre"
+             Title="Sobre"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="{StaticResource Black}">
+    
+    <VerticalStackLayout VerticalOptions="CenterAndExpand">
+        
+        <Label 
+            Text="Sobre"
+            HorizontalOptions="Center"
+            FontFamily="Serif_Display"
+            FontSize="50"
+            TextColor="{StaticResource White}"/>
+
+        <Label Text="Este aplicativo calcula o valor da diária do hotel de forma simples e rápida. Além de permitir escolher o tipo de suíte, datas e o número de hóspedes. Sempre prezando o conforto para a sua estadia"
+               TextColor="White"
+               FontSize="16"
+               HorizontalTextAlignment="Center"
+               Margin="20,10,20,0"/>
+
+        <Frame Padding="10" CornerRadius="15" Margin="0,30,0,0">
+            <VerticalStackLayout>
+                <Grid RowDefinitions="Auto,Auto,Auto"
+                      ColumnDefinitions="Auto,*"
+                      ColumnSpacing="10">
+
+                    <Label Grid.Row="0" Grid.Column="0"
+                           FontSize="14"
+                           FontFamily="Display_Italic"
+                           Text="Desenvolvido por:" 
+                           />
+                    <Label Grid.Row="0" Grid.Column="1"
+                           FontSize="14"
+                           Text="Gabriella Barriquello Passos"/>
+
+                    <Label Grid.Row="1" Grid.Column="0"
+                           FontSize="14"
+                           FontFamily="Display_Italic"
+                           Text="Ano de Desenvolvimento:"/>
+
+                    <Label Grid.Row="1" Grid.Column="1"
+                           FontSize="14"
+                           Text="2025"/>
+
+                    <Label Grid.Row="2" Grid.Column="0"
+                           FontFamily="Display_Italic"
+                           FontSize="14"
+                           Text="Versão do Aplicativo:"/>
+
+                    <Label Grid.Row="2" Grid.Column="1"
+                           FontSize="14"
+                           Text="1.0"/>
+                </Grid>
+            </VerticalStackLayout>
+        </Frame>
+            
+       
+    </VerticalStackLayout>
+</ContentPage>
